@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curio by New Imagination DMC China</title>
+  <style>
+    :root{
+      --ink:#101010; --paper:#fffaf1; --pink:#ff3aa6; --orange:#ff7a1a; --yellow:#ffe04d; --green:#2ce07d; --cyan:#23d7ff; --blue:#3a55ff; --purple:#8b4dff;
+    }
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);overflow-x:hidden}
+    a{text-decoration:none;color:inherit}.wrap{width:min(1180px,92vw);margin:auto}.btn{display:inline-flex;gap:10px;align-items:center;padding:15px 24px;border-radius:999px;background:#111;color:white;font-weight:800;box-shadow:0 12px 0 rgba(0,0,0,.12);transition:.2s}.btn:hover{transform:translateY(-3px);box-shadow:0 16px 0 rgba(0,0,0,.14)}
+    header{position:fixed;top:0;left:0;right:0;z-index:50;padding:18px 0;background:rgba(255,250,241,.72);backdrop-filter:blur(18px);border-bottom:1px solid rgba(0,0,0,.08)}
+    nav{display:flex;justify-content:space-between;align-items:center}.brand{display:flex;align-items:center;gap:12px;font-weight:900}.logo{font-size:36px;line-height:1;letter-spacing:-2px;font-weight:1000;transform:rotate(-2deg);font-family:Arial Black,Inter,sans-serif}.logo span:nth-child(1){color:var(--orange)}.logo span:nth-child(2){color:var(--pink)}.logo span:nth-child(3){color:var(--blue)}.logo span:nth-child(4){color:var(--green)}.logo span:nth-child(5){color:var(--purple)}.byline{font-size:11px;text-transform:uppercase;letter-spacing:.12em;line-height:1.2}.links{display:flex;gap:24px;font-weight:800}.links a{opacity:.8}.links a:hover{opacity:1;color:var(--pink)}
+    .hero{min-height:100vh;padding:130px 0 70px;position:relative;display:grid;align-items:center;background:radial-gradient(circle at 12% 18%,rgba(255,58,166,.3),transparent 32%),radial-gradient(circle at 82% 16%,rgba(35,215,255,.38),transparent 28%),radial-gradient(circle at 72% 85%,rgba(44,224,125,.3),transparent 30%),linear-gradient(135deg,#fffaf1 0%,#fff2c7 100%)}
+    .hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(0,0,0,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(0,0,0,.035) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 88%)}
+    .hero-grid{position:relative;display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center}.tag{display:inline-flex;align-items:center;gap:10px;background:white;border:2px solid #111;border-radius:999px;padding:8px 14px;font-weight:900;box-shadow:5px 5px 0 #111;margin-bottom:26px}.dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--yellow),var(--cyan))}
+    h1{font-size:clamp(52px,8vw,110px);line-height:.88;letter-spacing:-.07em;margin:0 0 26px;font-weight:1000}.grad{background:linear-gradient(90deg,var(--pink),var(--orange),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}.lead{font-size:clamp(20px,2.2vw,30px);line-height:1.25;font-weight:800;max-width:720px}.sub{font-size:18px;line-height:1.7;max-width:620px;color:#333}.cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.btn.alt{background:white;color:#111;border:2px solid #111}
+    .phone{position:relative;border:4px solid #111;border-radius:42px;padding:18px;background:#fff;box-shadow:18px 18px 0 #111;transform:rotate(2deg)}.video{height:610px;border-radius:28px;overflow:hidden;position:relative;background:linear-gradient(135deg,var(--pink),var(--orange),var(--yellow),var(--cyan),var(--blue));animation:hue 7s infinite alternate}.video:before{content:"";position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1542051841857-5f90071e7989?q=80&w=1200&auto=format&fit=crop') center/cover;mix-blend-mode:multiply;opacity:.58}.play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:96px;height:96px;border-radius:50%;background:white;display:grid;place-items:center;border:4px solid #111;box-shadow:8px 8px 0 #111;font-size:34px}.sticker{position:absolute;padding:12px 16px;border:3px solid #111;background:var(--yellow);font-weight:1000;border-radius:18px;box-shadow:6px 6px 0 #111;z-index:4}.s1{top:48px;left:-20px;transform:rotate(-8deg)}.s2{right:-16px;bottom:98px;background:var(--green);transform:rotate(8deg)}.s3{left:34px;bottom:-18px;background:var(--pink);color:white;transform:rotate(-3deg)}@keyframes hue{to{filter:hue-rotate(24deg)}}
+    section{padding:100px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:42px}.eyebrow{font-weight:1000;text-transform:uppercase;letter-spacing:.16em;color:var(--pink);font-size:13px}.title{font-size:clamp(38px,5vw,76px);line-height:.94;letter-spacing:-.055em;margin:10px 0 0;font-weight:1000}.text{font-size:20px;line-height:1.6;max-width:680px}.about{background:white;border-top:3px solid #111;border-bottom:3px solid #111}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.portrait-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;transform:rotate(-1deg)}.pic{height:240px;border:3px solid #111;border-radius:28px;background-size:cover;background-position:center;box-shadow:8px 8px 0 #111}.pic:nth-child(1){background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop')}.pic:nth-child(2){background-image:url('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=800&auto=format&fit=crop')}.pic:nth-child(3){background-image:url('https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?q=80&w=800&auto=format&fit=crop')}.pic:nth-child(4){background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=800&auto=format&fit=crop')}
+    .fun{background:#111;color:white;position:relative}.fun .eyebrow{color:var(--yellow)}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{min-height:260px;border-radius:30px;overflow:hidden;position:relative;border:3px solid white;background:#222;display:flex;align-items:end;padding:22px;isolation:isolate}.card:before{content:"";position:absolute;inset:0;background-size:cover;background-position:center;z-index:-2;transition:.35s}.card:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.72),transparent 60%);z-index:-1}.card:hover:before{transform:scale(1.08)}.card h3{margin:0;font-size:28px;line-height:1;font-weight:1000}.c1:before{background-image:url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=900&auto=format&fit=crop')}.c2:before{background-image:url('https://images.unsplash.com/photo-1533929736458-ca588d08c8be?q=80&w=900&auto=format&fit=crop')}.c3:before{background-image:url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=900&auto=format&fit=crop')}.c4:before{background-image:url('https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=900&auto=format&fit=crop')}.c5:before{background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=900&auto=format&fit=crop')}.c6:before{background-image:url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=900&auto=format&fit=crop')}.c7:before{background-image:url('https://images.unsplash.com/photo-1516035069371-29a1b244cc32?q=80&w=900&auto=format&fit=crop')}.c8:before{background-image:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=900&auto=format&fit=crop')}
+    .connection{background:linear-gradient(180deg,#fffaf1,#ffe7f4)}.pill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.pill{background:white;border:3px solid #111;border-radius:28px;padding:24px;box-shadow:8px 8px 0 #111;min-height:150px}.icon{font-size:38px}.pill h3{font-size:25px;margin:14px 0 8px}.pill p{margin:0;line-height:1.5;color:#444}.process{background:white}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{border:3px solid #111;border-radius:30px;padding:28px;min-height:250px;background:linear-gradient(135deg,#fff,var(--paper));position:relative;overflow:hidden}.num{font-size:58px;font-weight:1000;color:transparent;-webkit-text-stroke:2px #111}.step h3{font-size:28px;margin:10px 0}.step p{line-height:1.55;color:#333}.step:after{content:"";position:absolute;width:150px;height:150px;border-radius:50%;right:-48px;bottom:-50px;background:linear-gradient(135deg,var(--yellow),var(--pink));opacity:.8}
+    .final{padding:120px 0;background:radial-gradient(circle at 20% 20%,var(--yellow),transparent 24%),radial-gradient(circle at 80% 20%,var(--cyan),transparent 25%),radial-gradient(circle at 50% 100%,var(--pink),transparent 30%),#111;color:white;text-align:center}.final h2{font-size:clamp(48px,7vw,100px);letter-spacing:-.07em;line-height:.9;margin:0 0 24px}.final p{font-size:24px;font-weight:800}.footer{padding:34px 0;background:#111;color:white;border-top:1px solid rgba(255,255,255,.2)}.footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-weight:800;color:rgba(255,255,255,.78)}
+    @media(max-width:900px){.hero-grid,.about-grid{grid-template-columns:1fr}.links{display:none}.phone{transform:none}.cards,.pill-grid,.steps{grid-template-columns:1fr 1fr}.video{height:520px}.section-head{display:block}}@media(max-width:620px){.cards,.pill-grid,.steps{grid-template-columns:1fr}h1{font-size:58px}.logo{font-size:30px}.pic{height:190px}.video{height:460px}.footer .wrap{display:block}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="wrap">
+      <a class="brand" href="#top" aria-label="Curio Home">
+        <div class="logo"><span>C</span><span>u</span><span>r</span><span>i</span><span>o</span></div>
+        <div class="byline">by New Imagination<br>DMC China</div>
+      </a>
+      <div class="links"><a href="#who">Who We Are</a><a href="#fun">Fun</a><a href="#connection">Connection</a><a href="#contact">Contact</a></div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="tag"><span class="dot"></span> China, but more social.</div>
+          <h1>Come <span class="grad">Curious.</span><br>Leave Connected.</h1>
+          <p class="lead">For those seeking fun and connection in China.</p>
+          <p class="sub">Curio creates colorful, people-first travel experiences — from city nights and festivals to hiking groups, creative camps, food crawls, photography walks and communities built around shared passions.</p>
+          <div class="cta-row"><a class="btn" href="#connection">Find Your People →</a><a class="btn alt" href="#fun">Explore the Fun</a></div>
+        </div>
+        <div class="phone" aria-label="Intro video visual">
+          <div class="sticker s1">FUN FIRST</div><div class="sticker s2">LOCAL FRIENDS</div><div class="sticker s3">NO BORING TOURS</div>
+          <div class="video"><div class="play">▶</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="who" class="about">
+      <div class="wrap about-grid">
+        <div class="portrait-grid"><div class="pic"></div><div class="pic"></div><div class="pic"></div><div class="pic"></div></div>
+        <div>
+          <div class="eyebrow">Who We Are</div>
+          <h2 class="title">A travel lifestyle brand for curious people.</h2>
+          <p class="text">China has incredible landscapes and history. But sometimes, the memory that stays with you is not a place — it is the people you met, the table you shared, the night you did not plan, or the hobby that suddenly became a doorway into a new community.</p>
+          <p class="text">Curio is created for travelers who want to express themselves, try something new, and feel part of something while traveling in China.</p>
+          <p class="lead">We do not just help you see China. We help you belong in it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="fun" class="fun">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Fun</div><h2 class="title">Not a checklist. A good time.</h2></div><p class="text">Party, discover, play, taste, move, create — Curio turns China into something you can participate in.</p></div>
+        <div class="cards">
+          <div class="card c1"><h3>Party & Nightlife</h3></div><div class="card c2"><h3>City Discovery</h3></div><div class="card c3"><h3>Festival Energy</h3></div><div class="card c4"><h3>Sports Days</h3></div>
+          <div class="card c5"><h3>Food Crawls</h3></div><div class="card c6"><h3>Road Trips</h3></div><div class="card c7"><h3>Photo Walks</h3></div><div class="card c8"><h3>Outdoor Escapes</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="connection" class="connection">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">Connection</div><h2 class="title">Find your people in China.</h2></div><p class="text">Curio is built around communities, identities and shared interests — because the best travel is often the one you do together.</p></div>
+        <div class="pill-grid">
+          <div class="pill"><div class="icon">🥾</div><h3>Adventure People</h3><p>Hiking, camping, trekking, cycling and mountain weekends.</p></div>
+          <div class="pill"><div class="icon">📸</div><h3>Creative People</h3><p>Street photography, design walks, ceramics, calligraphy and workshops.</p></div>
+          <div class="pill"><div class="icon">🌈</div><h3>Inclusive People</h3><p>LGBT-friendly social experiences, nightlife and community moments.</p></div>
+          <div class="pill"><div class="icon">🥋</div><h3>Kung Fu & Culture Camp</h3><p>Learn, train, eat and live around a shared passion.</p></div>
+          <div class="pill"><div class="icon">🧘</div><h3>Wellness People</h3><p>Yoga, meditation, tea, hot springs and slow reset days.</p></div>
+          <div class="pill"><div class="icon">🗣️</div><h3>Language Exchange</h3><p>Meet locals and other travelers through real conversations.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process">
+      <div class="wrap">
+        <div class="section-head"><div><div class="eyebrow">What We Create & How We Work</div><h2 class="title">You bring the curiosity. We bring the connections.</h2></div></div>
+        <div class="steps">
+          <div class="step"><div class="num">01</div><h3>Discover</h3><p>We understand what kind of fun, pace, people and vibe you are looking for.</p></div>
+          <div class="step"><div class="num">02</div><h3>Match</h3><p>We connect you with the right cities, communities, hosts and experiences.</p></div>
+          <div class="step"><div class="num">03</div><h3>Create</h3><p>We design a flexible route with transport, stays, activities and social moments.</p></div>
+          <div class="step"><div class="num">04</div><h3>Connect</h3><p>You leave with stories, friends, photos and a different relationship with China.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="final">
+      <div class="wrap">
+        <h2>China is more fun together.</h2>
+        <p>Start your Curio journey with New Imagination DMC China.</p>
+        <a class="btn alt" href="mailto:info@newimaginationdmc.com">Let’s Create Something Fun</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="wrap"><div>Curio by New Imagination DMC China</div><div>Come Curious. Leave Connected.</div></div></footer>
+</body>
+</html>
