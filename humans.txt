@@ -1,9 +1,8 @@
 /* TEAM */
 Brand: Curio by New Imagination DMC China
-Website: https://curio-china.com/
-Contact: info@newimaginationdmc.com
+Website: https://www.curio-china.com/
+Contact: info@curio-china.com
 
 /* SITE */
 Language: English
-Category: Social travel experiences in China
-Purpose: A colorful, people-first travel brand for travelers seeking fun, connection, communities, and shared interests in China.
+Purpose: Fun social travel experiences in China for curious travelers, communities and shared-interest groups.
