@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-# Replace with the final live sitemap URL before publishing.
-Sitemap: https://your-domain.com/curio/sitemap.xml
+Sitemap: https://www.curio-china.com/sitemap.xml
+Sitemap: https://www.curio-china.com/video-sitemap.xml
