@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://curio-china.com/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://curio-china.com/images/curio-hero-social-travel-china.jpg</video:thumbnail_loc>
+      <video:title>Curio Social Travel Experiences in China</video:title>
+      <video:description>Hero video for Curio, a fun social travel experience brand in China by New Imagination DMC China.</video:description>
+      <video:content_loc>https://curio-china.com/videos/curio-hero-social-travel-china.mp4</video:content_loc>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:publication_date>2026-07-04T00:00:00+08:00</video:publication_date>
+    </video:video>
+  </url>
+</urlset>
